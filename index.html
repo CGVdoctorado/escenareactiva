@@ -347,7 +347,7 @@
                     const prompt = `Genera una micro escena dramática corta y evocadora (máximo 30 palabras) usando la siguiente palabra clave: "${keyword}".`;
                     chatHistory.push({ role: "user", parts: [{ text: prompt }] });
                     const payload = { contents: chatHistory };
-                    const apiKey = ""; 
+                    const apiKey = "AIzaSyD-JpCGWF1rkkREMBjJpZOX8OzeoLsMdps"; 
                     const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
                     
                     const response = await fetch(apiUrl, {
@@ -391,7 +391,7 @@
                     const prompt = `Analiza la emoción o el sentimiento principal de la siguiente frase: "${phrase}". Responde concisamente con una o dos palabras, por ejemplo: 'Alegría', 'Tristeza', 'Enojo', 'Neutral', 'Sorpresa', 'Miedo'.`;
                     chatHistory.push({ role: "user", parts: [{ text: prompt }] });
                     const payload = { contents: chatHistory };
-                    const apiKey = ""; 
+                    const apiKey = "AIzaSyD-JpCGWF1rkkREMBjJpZOX8OzeoLsMdps"; 
                     const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
                     
                     const response = await fetch(apiUrl, {
